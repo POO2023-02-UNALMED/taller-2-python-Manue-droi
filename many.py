@@ -1,6 +1,3 @@
-import imaplib
-
-
 class Asiento:
 
     def _init_(self, color, precio, registroAsiento):
@@ -10,7 +7,7 @@ class Asiento:
 
     def cambiarColor(self, nuevoColor, color):
         if nuevoColor == "rojo" or nuevoColor =="verde" or nuevoColor == "amarillo" or nuevoColor =="negro" or nuevoColor =="blanco" == nuevoColor:
-            nuevoColor.self == color
+            nuevoColor.self = str(color)
 
 
 class Motor:
@@ -23,13 +20,11 @@ class Motor:
         self.registroMotor = int(nuevoRegistro)
 
     def asignarTipo(self, nuevoTipo):
-        if nuevoTipo == "electrico" or "gasolina":
-            self.tipo = nuevoTipo
-        else:
-            tipo = tipo    
+        if nuevoTipo == "electrico" or nuevoTipo =="gasolina":
+            self.tipo = str(nuevoTipo)   
 
 class Auto:
-    def _init_(self, modelo, precio, asientos, marca, motor, registroAuto, cantidadCreados):
+    def __init__(self, modelo, precio, asientos, marca, motor, registroAuto, cantidadCreados):
         modelo.self = modelo
         precio.self = precio
         Asiento = asientos
@@ -41,6 +36,7 @@ class Auto:
     def cantidadAsientos(self, asientos ):
         asientos.self = asientos
     
+
 
     def verificarIntegridad ( self, import class Auto(), import class Motor(), import class Asiento()):
         if registroAuto == registroMotor == registroAsiento:
