@@ -42,7 +42,7 @@ class Auto:
             for i in self.Asiento:
                 if isinstance(i,Asiento):
                     count += 1
-                return count
+        return count
     
     def verificarIntegridad(self, registro, Asiento, cantidadAsientos, motor):
         if registro == registro:
