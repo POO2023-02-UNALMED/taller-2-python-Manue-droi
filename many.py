@@ -9,7 +9,7 @@ class Asiento:
         registroAsiento.self = registroAsiento
 
     def cambiarColor(self, nuevoColor, color):
-        if nuevoColor == ("rojo" or nuevoColor =="verde" or nuevoColor== "amarillo" or nuevoColor=="negro"or nuevoColor=="blanco" or nuevoColor):
+        if nuevoColor == ("rojo" == nuevoColor or"verde" == nuevoColor or "amarillo" == nuevoColor or"negro"== nuevoColor or"blanco" == nuevoColor):
             nuevoColor.self == color
 
 
@@ -32,7 +32,7 @@ class Auto:
     def _init_(self, modelo, precio, asiento, marca, motor, registroAuto, cantidadCreados):
         modelo.self = modelo
         precio.self = precio
-        asiento  = asiento.self
+        asiento.self = []
         marca.self= marca
         motor.self = motor
         registroAuto.self = registroAuto
@@ -42,9 +42,7 @@ class Auto:
         asientos.self = asientos
     
 
-    def verificarIntegridad ( class Auto, class Motor, class Asiento):
-    
-        if registroAuto == registroMotor == RegistroAsiento:
-            print("Auto original")
-        else:
+    def verificarIntegridad ( self, class Auto, class Motor, class Asiento):
+        
+        
             print("Las piezas no son originales")
