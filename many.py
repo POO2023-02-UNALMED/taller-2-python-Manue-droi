@@ -1,20 +1,21 @@
 class Asiento:
 
+
     def __init__(self, color, precio, registroAsiento):
-        color.self = color
-        precio.self = precio
-        registroAsiento.self = registroAsiento
+        self.color = color
+        self.precio = precio
+        self.registroAsiento = registroAsiento
 
     def cambiarColor(self, nuevoColor, color):
         if nuevoColor == "rojo" or nuevoColor =="verde" or nuevoColor == "amarillo" or nuevoColor =="negro" or nuevoColor =="blanco" == nuevoColor:
-            nuevoColor.self = str(color)
+            self.nuevoColor = str(color)
 
 
 class Motor:
     def __init__(self, numeroCilindros, tipo, registroMotor):
-        numeroCilindros.self= numeroCilindros
-        tipo.self = tipo
-        registroMotor.self = registroMotor
+        self.numeroCilindros.self= numeroCilindros
+        self.tipo = tipo
+        self.registroMotor = registroMotor
 
     def cambiarRegistro(self, nuevoRegistro):
         self.registroMotor = int(nuevoRegistro)
@@ -25,16 +26,16 @@ class Motor:
 
 class Auto:
     def __init__(self, modelo, precio, asientos, marca, motor, registroAuto, cantidadCreados):
-        modelo.self = modelo
-        precio.self = precio
-        Asiento = asientos
-        marca.self= marca
-        Motor = motor
-        registroAuto.self = registroAuto
-        cantidadCreados = cantidadCreados
+        self.modelo = modelo
+        self.preciof = precio
+        self.Asiento = asientos
+        self.marca= marca
+        self.Motor = motor
+        self.registroAuto = registroAuto
+        self.cantidadCreados = cantidadCreados
 
     def cantidadAsientos(self, asientos ):
-        asientos.self = asientos
+        asientos = asientos
     
 
 
