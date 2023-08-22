@@ -41,9 +41,20 @@ class Auto:
     
         for i in self.Asiento:
             if i != None:
-                count =+ 1
+                count += 1
             
         return count
+    
+    def verificarIntegridad(self, registro, Asientos, motor):
+        if registro == registro:
+            for i in (Asientos):
+                if Asiento != None:
+                    if(registro != registro) or (registro != motor):
+                        print("Las piezas no son originales")    
+        else:
+            print("Auto original")
+
+        
 
 
 
