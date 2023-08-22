@@ -39,7 +39,7 @@ class Auto:
     
 
 
-    def verificarIntegridad ( self, import class Auto(), import class Motor(), import class Asiento()):
+    def verificarIntegridad ( self, class Motor(), class Asiento()):
         if (registroAuto == registroMotor == registroAsiento):
             print("Auto original")
         else:
