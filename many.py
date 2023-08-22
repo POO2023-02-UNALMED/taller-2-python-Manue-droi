@@ -1,56 +1,50 @@
+import imaplib
+
+
 class Asiento:
-    
-    def _init_(self, color, precio, registro):
-        self.color = color
-        self.precio = precio
-        self.registro = registro
-    
-    def cambiarColor(self, nuevoColor):
-        if (nuevoColor == "rojo" or nuevoColor == "verde" or nuevoColor == "amarillo" or nuevoColor == "negro" or nuevoColor == 'blanco'):
-            self.color = str(nuevoColor)
+
+    def _init_(self, color, precio, registroAsiento):
+        color.self = color
+        precio.self = precio
+        registroAsiento.self = registroAsiento
+
+    def cambiarColor(self, nuevoColor, color):
+        if nuevoColor == ("rojo" or nuevoColor =="verde" or nuevoColor== "amarillo" or nuevoColor=="negro"or nuevoColor=="blanco" or nuevoColor):
+            nuevoColor.self == color
 
 
 class Motor:
+    def _init_(self, numeroCilindros, tipo, registroMotor):
+        numeroCilindros.self= numeroCilindros
+        tipo.self = tipo
+        registroMotor.self = registroMotor
 
-    def _init_(self, numeroCilindros, tipo, registro):
-        self.numeroCilindros = numeroCilindros
-        self.tipo = tipo
-        self.registro = registro
-    
-    def cambiarRegistro(self, nuevoRegistro):
-        self.registro = int(nuevoRegistro)
-    
+    def cambiarRegistro(self, nuevoRegistro, registroMotor):
+        self.nuevoRegistro = registroMotor
+
     def asignarTipo(self, nuevoTipo):
-        if (nuevoTipo == "electrico" or nuevoTipo == "gasolina"):
-            self.tipo = str(nuevoTipo)
+        if nuevoTipo == "electrico" or "gasolina":
+            self.tipo = nuevoTipo
+        else:
+            tipo = tipo    
 
 class Auto:
-
-    def _init_(self, modelo, marca, registro, cantidadCreados):
-        self.modelo = modelo
-        motor = Motor(self)
-        self.motor = motor
-        self.marca = marca
-        self.registro = registro
-        asientos = [Asiento(self)]
-        self.asientos = asientos
+    def _init_(self, modelo, precio, asiento, marca, motor, registroAuto, cantidadCreados):
+        modelo.self = modelo
+        precio.self = precio
+        asiento  = asiento.self
+        marca.self= marca
+        motor.self = motor
+        registroAuto.self = registroAuto
         cantidadCreados = cantidadCreados
 
-    def cantidadAsientos(self):
-        count = 0
-        asientos = [Asiento(self)]
-
-        for i in range(len(asientos)):
-            if asientos[i] != 0:
-                count =+ 1
-            
-        return count
+    def cantidadAsientos(self, asientos ):
+        asientos.self = asientos
     
-    def verificarIntegridad(self):
-        asientos = [Asiento(self)]
-        
-        for i in range(len(asientos)):
-            if asientos[i].registro == (Auto(self).registro and Motor(self).registro):
-                return "Auto original"
-            else:
-                return "Las piezas del auto no son originales"
+
+    def verificarIntegridad ( class Auto, class Motor, class Asiento):
+    
+        if registroAuto == registroMotor == RegistroAsiento:
+            print("Auto original")
+        else:
+            print("Las piezas no son originales")
