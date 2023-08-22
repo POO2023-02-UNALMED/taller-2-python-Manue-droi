@@ -51,10 +51,11 @@ class Auto:
                 if Asiento != None:
                     if(registro != registro) or (registro != motor):
                         print("Las piezas no son originales")    
-        else:
-            print("Auto original")
+                else:
+                    print("Auto original")
 
-        
+        else:
+            print("Las piezas no son originales")
 
 
 
